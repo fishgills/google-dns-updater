@@ -53,7 +53,8 @@ def main(request):
     logging.info("Update request started.")
 
     request_args = request.get_json(silent=True)
-    
+    print(request_args)
+	
     # Assign our parameters
     if request_args:
         host = request_args['host']
